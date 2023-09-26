@@ -41,9 +41,9 @@
 //  });
 
 let images = [
-    "url('/./img/youdied.jpeg')",
-    "url('/./img/bossbattle.png')",
-    "url('/./img/newgame.jpeg')",
+    'url("./img/youdied.jpeg")',
+    'url("./img/bossbattle.png")',
+    'url("./img/newgame.jpeg")',
 ];
 
 let screen = document.querySelector("#screen");
