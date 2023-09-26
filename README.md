@@ -48,4 +48,4 @@ Si deseas contribuir o realizar mejoras en esta aplicación, puedes seguir estos
 ---
 
 ¡Disfruta explorando la réplica de la PSP con temática Dark Souls!
-
+![Captura de pantalla](./img/screenshot.png)
