@@ -40,26 +40,40 @@
 //    }
 //  });
 
+let images = [
+    "url('../img/youdied.jpeg')",
+    "url('../img/bossbattle.png')",
+    "url('../img/newgame.jpeg')",
+];
 
-let images = ["url('../img/newgame.jpeg')", "url('../img/bossbattle.png')", "url('../img/youdied.jpeg')"]
+let screen = document.querySelector("#screen");
 
-let screen = document.querySelector("#screen")
-
-let i = 0
-let clickButtons = document.querySelectorAll(".rp")
+let i = 0;
+let clickButtons = document.querySelectorAll(".rp");
 clickButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-        if (i===2) {
-            console.log(i)
-            console.log(images[i])
-            console.log(button)
-            i=0;
-        screen.style.backgroundImage=images[i]
-        
+  button.addEventListener("click", function () {
+    if (e === true) {
+        e=true
+        if (i === 2) {
+            i = 0;
+            screen.style.backgroundImage = images[i];
+        } else {
+            i++;
+            screen.style.backgroundImage = images[i];
         }
-        else {
-            i++
-            screen.style.backgroundImage=images[i]
-        }
-    })
-})
+    }
+    });
+});
+
+let e = false;
+let psbBtnButton = document.querySelector(".psbBtn");
+psbBtnButton.addEventListener("click", function () {
+  if (e === false) {
+    e = true;
+    screen.style.backgroundColor = "green";
+  } else {
+    e = false;
+    screen.style.backgroundColor = "black";
+    screen.style.backgroundImage = "";
+  }
+});
